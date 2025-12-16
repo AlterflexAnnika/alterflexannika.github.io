@@ -22,7 +22,7 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(255,255,255,0); /* transparency overlay */
+  background-color: rgba(255,255,255,0.25); /* transparency overlay */
   z-index: -1;
 }
 
@@ -36,24 +36,36 @@ header h1 {
   color: var(--primary-blue);
   font-size: 2.2em;
 }
+nav {
+  margin-top: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
 nav a {
   color: var(--primary-blue);
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
 }
 nav a:hover {
   color: var(--accent-blue);
 }
-.button {
-  background-color: var(--primary-blue);
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 4px;
-  text-decoration: none;
+
+/* Bold line below nav */
+nav::after {
+  content: "";
+  display: block;
+  height: 4px; /* bold line */
+  background-color: rgba(144,164,174,0.25); /* muted-blue with 25% transparency */
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
-.button:hover {
-  background-color: var(--accent-blue);
+
+/* Hover effect: line becomes darker and thicker */
+nav:hover::after {
+  background-color: rgba(144,164,174,0.6); /* stronger opacity */
+  height: 6px;
 }
 
 /* Hero */
@@ -65,6 +77,7 @@ nav a:hover {
   text-align: center;
   color: var(--primary-blue);
   font-size: 2em;
+  font-weight: bold;
 }
 
 /* Content */
@@ -82,7 +95,7 @@ h3 {
 
 /* Services Grid */
 .services-grid {
-  background-color: var(--soft-blue);
+  background-color: rgba(227,242,253,0.25); /* soft-blue with 25% transparency */
   padding: 30px;
 }
 .services-grid h2 {
@@ -114,6 +127,6 @@ h3 {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: var(--muted-blue);
-  color: #fff;
+  background-color: rgba(144,164,174,0.25); /* muted-blue with 25% transparency */
+  color: #000; /* darker text for readability */
 }
