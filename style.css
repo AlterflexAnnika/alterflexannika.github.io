@@ -22,7 +22,7 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(255,255,255,0.25); /* transparency overlay */
+  background-color: rgba(255,255,255,0.30); /* transparency overlay */
   z-index: -1;
 }
 
@@ -111,7 +111,7 @@ h3 {
 
 /* Services Grid */
 .services-grid {
-  background-color: rgba(227,242,253,0.40); /* soft-blue with transparency */
+  background-color: rgba(227,242,253,0.60); /* soft-blue with transparency */
   padding: 30px;
 }
 .services-grid h2 {
@@ -143,6 +143,6 @@ h3 {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: rgba(144,164,174,0.30); /* muted-blue with transparency */
+  background-color: rgba(144,164,174,0.50); /* muted-blue with transparency */
   color: #000; /* darker text for readability */
 }
