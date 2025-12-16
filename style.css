@@ -138,6 +138,51 @@ h3 {
   font-weight: bold;
   color: var(--primary-blue);
 }
+/* Home page service buttons */
+.service-button {
+  display: flex;
+  align-items: center;        /* icon + text horizontally aligned */
+  justify-content: center;    /* center content inside button */
+  background-color: var(--accent-blue);
+  color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* shadow effect */
+  transition: background-color 0.3s, transform 0.2s;
+}
+.service-button img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+.service-button:hover {
+  background-color: #357ABD; /* darker blue on hover */
+  transform: translateY(-2px);
+}
+
+/* Services page boxes */
+.service-box {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.service-box h3 {
+  display: flex;
+  align-items: center; /* icon + text aligned horizontally */
+  gap: 10px;
+  color: var(--secondary-blue);
+}
+.service-box h3 img {
+  width: 26px;
+  height: 26px;
+}
+.service-box ul {
+  margin-top: 10px;
+}
 
 /* Footer */
 footer {
