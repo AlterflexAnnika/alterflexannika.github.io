@@ -64,7 +64,7 @@ nav::after {
 
 /* Hover effect: line becomes darker and thicker */
 nav:hover::after {
-  background-color: rgba(144,164,174,0.6); /* stronger opacity */
+  background-color: rgba(144,164,174,0.8); /* stronger opacity */
   height: 6px;
 }
 /* Buttons */
@@ -111,7 +111,7 @@ h3 {
 
 /* Services Grid */
 .services-grid {
-  background-color: rgba(227,242,253,0.10); /* soft-blue with 25% transparency */
+  background-color: rgba(227,242,253,0.40); /* soft-blue with transparency */
   padding: 30px;
 }
 .services-grid h2 {
@@ -143,6 +143,6 @@ h3 {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: rgba(144,164,174,0.15); /* muted-blue with 25% transparency */
+  background-color: rgba(144,164,174,0.30); /* muted-blue with transparency */
   color: #000; /* darker text for readability */
 }
