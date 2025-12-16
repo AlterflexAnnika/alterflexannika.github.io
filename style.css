@@ -1,51 +1,68 @@
+/* Theme Colours */
+:root {
+  --background: #FFFFFF;
+  --soft-blue: #E3F2FD;
+  --muted-blue: #90A4AE;
+  --primary-blue: #205081;
+  --secondary-blue: #357ABD;
+  --accent-blue: #2196F3;
+  --dark-grey: #333333;
+  --medium-grey: #666666;
+}
+
 /* General Layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #cd7f32; /* Bronze background */
-  color: #000000; /* Black text */
+  background-color: var(--background);
+  color: var(--dark-grey);
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background-color: #00bfff; /* Sky blue header */
-  color: black;
+  background-color: var(--soft-blue);
   padding: 15px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
-}
-
-nav {
-  margin-top: 10px;
-  text-align: center;
+  color: var(--primary-blue);
 }
 
 nav a {
-  color: black;
+  color: var(--primary-blue);
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #F1CF54; /* Golden yellow hover */
+  color: var(--accent-blue);
+}
+
+.button {
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--accent-blue);
 }
 
 /* Hero Banner */
 .hero {
-  background-color: #FFFCEF; /* Soft cream */
+  background-color: var(--soft-blue);
   text-align: center;
   padding: 50px 20px;
 }
 
 .hero h2 {
-  margin-bottom: 10px;
-  color: #000000;
+  color: var(--primary-blue);
 }
 
 /* Content Sections */
@@ -53,20 +70,17 @@ section.content {
   padding: 30px;
   max-width: 900px;
   margin: auto;
-  background-color: rgba(255, 252, 239, 0.9); /* Cream contrast box */
-  border-radius: 6px;
 }
 
 /* Services Grid */
 .services-grid {
-  background-color: #f0f8ff; /* Very light sky blue */
+  background-color: var(--soft-blue);
   padding: 30px;
 }
 
 .services-grid h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #000000;
+  color: var(--secondary-blue);
 }
 
 .grid {
@@ -76,58 +90,25 @@ section.content {
 }
 
 .card {
-  background: #D9B29C; /* Warm beige */
-  border: 2px solid #00bfff; /* Sky blue border */
+  background: #fff;
+  border: 2px solid var(--muted-blue);
   padding: 20px;
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
   transition: transform 0.2s, background-color 0.2s;
-  color: #000000;
 }
 
 .card:hover {
   transform: scale(1.05);
-  background-color: #F1CF54; /* Golden yellow hover */
-}
-
-/* Mission Statement */
-.mission {
-  background-color: #FFFCEF;
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-  border-left: 5px solid #00bfff; /* Sky blue accent */
-}
-
-blockquote {
-  font-style: italic;
-  color: #555555; /* Neutral grey */
-  border-left: 4px solid #00bfff;
-  padding-left: 15px;
-  margin: 20px 0;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  background-color: #E54C44; /* Bold red button */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #F1CF54; /* Golden yellow hover */
-  color: black;
+  background-color: var(--accent-blue);
+  color: #fff;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #00bfff; /* Sky blue footer */
-  color: black;
+  background-color: var(--muted-blue);
+  color: #fff;
 }
