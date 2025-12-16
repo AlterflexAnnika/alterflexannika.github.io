@@ -67,6 +67,22 @@ nav:hover::after {
   background-color: rgba(144,164,174,0.6); /* stronger opacity */
   height: 6px;
 }
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--accent-blue); /* Sky blue button */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #87ceeb; /* lighter sky blue on hover */
+  transform: scale(1.05);    /* subtle grow effect */
+}
 
 /* Hero */
 .hero {
@@ -95,7 +111,7 @@ h3 {
 
 /* Services Grid */
 .services-grid {
-  background-color: rgba(227,242,253,0.25); /* soft-blue with 25% transparency */
+  background-color: rgba(227,242,253,0.10); /* soft-blue with 25% transparency */
   padding: 30px;
 }
 .services-grid h2 {
@@ -127,6 +143,6 @@ h3 {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: rgba(144,164,174,0.25); /* muted-blue with 25% transparency */
+  background-color: rgba(144,164,174,0.15); /* muted-blue with 25% transparency */
   color: #000; /* darker text for readability */
 }
