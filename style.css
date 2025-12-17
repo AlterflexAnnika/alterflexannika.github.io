@@ -176,27 +176,18 @@ h3 {
 
 /* Individual service box */
 .service-box {
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  background-color: #0078d4; /* your box color */
+  color: white;
   padding: 20px;
-  margin: 0; /* gap handles spacing now */
+  border-radius: 8px;
+  opacity: 0.85; /* 0 = fully transparent, 1 = fully opaque */
+  transition: opacity 0.3s ease;
 }
 
-/* Title with icon + text aligned */
-.service-box h3 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--secondary-blue);
-  margin-top: 0;
+.service-box:hover {
+  opacity: 1; /* full visibility on hover */
 }
 
-/* Icon size */
-.service-box h3 img {
-  width: 26px;
-  height: 26px;
-}
 
 /* List inside box */
 .service-box ul {
