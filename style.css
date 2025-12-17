@@ -186,7 +186,7 @@ h3 {
 }
 
 .service-icon {
-  width: 30px;   /* increase size */
+  width: 40px;   /* increase size */
   height: auto;
   opacity: 1;
   transition: 0.3s ease;
