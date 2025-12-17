@@ -174,20 +174,18 @@ h3 {
   padding: 30px;
 }
 
-/* Individual service box */
 .service-box {
-  background-color: #0078d4; /* your box color */
-  color: white;
+  background-color: rgba(255, 255, 255, 0.85); /* white with transparency */
+  color: #000; /* keep text readable */
   padding: 20px;
   border-radius: 8px;
-  opacity: 0.85; /* 0 = fully transparent, 1 = fully opaque */
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .service-box:hover {
-  opacity: 1; /* full visibility on hover */
+  background-color: rgba(255, 255, 255, 1); /* fully opaque white on hover */
 }
-
 
 /* List inside box */
 .service-box ul {
