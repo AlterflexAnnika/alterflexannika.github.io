@@ -182,11 +182,11 @@ h3 {
 
 .service-header h3 {
   margin: 0;
-  font-size: 1.8rem; /* adjust if needed */
+  font-size: 1.2rem; /* adjust if needed */
 }
 
 .service-icon {
-  width: 48px;   /* increase size */
+  width: 40px;   /* increase size */
   height: auto;
   opacity: 0.9;
   transition: 0.3s ease;
