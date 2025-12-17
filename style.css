@@ -162,39 +162,42 @@ h3 {
   transform: translateY(-2px);
 }
 
-/* Services page boxes */
+/* Services page container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px; /* spacing between boxes in both directions */
+  padding: 30px;
+}
+
+/* Individual service box */
 .service-box {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   padding: 20px;
-  margin-bottom: 40px;
+  margin: 0; /* gap handles spacing now */
 }
+
+/* Title with icon + text aligned */
 .service-box h3 {
   display: flex;
-  align-items: center; /* icon + text aligned horizontally */
+  align-items: center;
   gap: 10px;
   color: var(--secondary-blue);
+  margin-top: 0;
 }
+
+/* Icon size */
 .service-box h3 img {
   width: 26px;
   height: 26px;
 }
+
+/* List inside box */
 .service-box ul {
   margin-top: 10px;
-}
-/* Align icons with text in service list */
-.content ul li {
-  display: flex;
-  align-items: center;   /* vertically center icon + text */
-  gap: 8px;              /* space between icon and text */
-  margin-bottom: 8px;
-}
-
-.content ul li img {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;        /* prevents icon from shrinking */
+  padding-left: 20px; /* optional: indent list items */
 }
 
 /* Footer */
